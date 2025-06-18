@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Фотостудия | Каталог</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    nav {
+      background-color: #ffd7d7;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: #222;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #b30000;
+    }
+
+    .item img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>Фотостудия "Лучи Света"</header>
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="catalog.html">Каталог</a>
+  </nav>
+
+  <section class="catalog" style="background:#fef3f3; padding: 2rem;">
+    <h2 style="text-align:center; margin-bottom: 1.5rem;">Каталог услуг</h2>
+    <div class="catalog-header" style="text-align:center; margin-bottom: 2rem;">
+      <input type="text" placeholder="Поиск..." style="padding:0.5rem 1rem; border-radius:20px; border:1px solid #ccc; width:300px;" />
+    </div>
+
+    <div class="item-list" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:2rem;">
+      <div class="item" data-category="portrait" data-price="2500">
+        <img src="portrety.jpg" alt="Портретная съёмка">
+        <h4>Портретная съёмка</h4>
+        <p>Классическая или креативная портретная фотосессия в студии.</p>
+      </div>
+      <div class="item" data-category="family" data-price="4000">
+        <img src="family.webp" alt="Семейная фотосессия">
+        <h4>Семейная фотосессия</h4>
+        <p>Тёплая и душевная съёмка всей семьи — дома или в студии.</p>
+      </div>
+      <div class="item" data-category="event" data-price="7000">
+        <img src="merop.jpg" alt="Мероприятия">
+        <h4>Съёмка мероприятий</h4>
+        <p>Фотосъёмка свадеб, дней рождения, концертов и корпоративов.</p>
+      </div>
+      <div class="item" data-category="product" data-price="3000">
+        <img src="predm.jpg" alt="Предметная съёмка">
+        <h4>Предметная съёмка</h4>
+        <p>Идеально для интернет-магазинов, каталожных съёмок и рекламы.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
