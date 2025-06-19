@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Контакты | Фотостудия</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    nav {
+      background-color: #ffd7d7;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: #222;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #b30000;
+    }
+
+    .info-box img,
+    .item img {
+      width: 100%;
+      border-radius: 10px;
+      margin: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+  <header>Фотостудия "Лучи Света"</header>
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="catalog.html">Каталог</a>
+    <a href="contact.html">Контакты</a>
+  </nav>
+  <main class="contact-container">
+    <h2>Свяжитесь с нами</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Ваше имя" required />
+      <input type="email" placeholder="Электронная почта" required />
+      <textarea rows="5" placeholder="Ваше сообщение" required></textarea>
+      <button type="submit">Отправить</button>
+    </form>
+
+    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/mikhaylovskiy_skver/11661383021/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Михайловский сквер</a><a href="https://yandex.ru/maps/2/saint-petersburg/category/square/223334343586/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Сквер в Санкт‑Петербурге</a><a href="https://yandex.ru/maps/2/saint-petersburg/category/urban_forest/256037362/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Лесопарк в Санкт‑Петербурге</a><iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=30.332311%2C59.937770&mode=poi&poi%5Bpoint%5D=30.331548%2C59.937287&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D11661383021&z=16.67" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+
+    <div class="contact-info">
+      <p><strong>Телефон:</strong> +7 (901) 123-12-34</p>
+      <p><strong>Email:</strong> <a href="mailto:info@luchisveta.ru">info@luchisveta.ru</a></p>
+      <p><strong>Мы в соцсетях:</strong></p>
+      <p>
+        <a href="https://t.me" target="_blank">Telergam</a> |
+        <a href="https://vk.com" target="_blank">VK</a> |
+      </p>
+    </div>
+  </main>
+</body>
+</html>
