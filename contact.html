@@ -43,10 +43,10 @@
   </nav>
   <main class="contact-container">
     <h2>Свяжитесь с нами</h2>
-    <form class="contact-form">
-      <input type="text" placeholder="Ваше имя" required />
-      <input type="email" placeholder="Электронная почта" required />
-      <textarea rows="5" placeholder="Ваше сообщение" required></textarea>
+    <form class="contact-form" id="contactForm" novalidate>
+      <input type="text" id="name" placeholder="Ваше имя" required />
+      <input type="email" id="email" placeholder="Электронная почта" required />
+      <textarea rows="5" id="message" placeholder="Ваше сообщение" required></textarea>
       <button type="submit">Отправить</button>
     </form>
 
@@ -57,10 +57,11 @@
       <p><strong>Email:</strong> <a href="mailto:info@luchisveta.ru">info@luchisveta.ru</a></p>
       <p><strong>Мы в соцсетях:</strong></p>
       <p>
-        <a href="https://t.me" target="_blank">Telergam</a> |
-        <a href="https://vk.com" target="_blank">VK</a> |
+        <a href="https://t.me" target="_blank" rel="noopener noreferrer">Telegram</a> |
+        <a href="https://vk.com" target="_blank" rel="noopener noreferrer">VK</a> |
       </p>
     </div>
   </main>
+  <script src="contact.js"></script>
 </body>
 </html>

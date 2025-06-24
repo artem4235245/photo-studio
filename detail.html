@@ -44,9 +44,14 @@
   <main class="detail-container">
     <h2>Портретная фотосессия</h2>
     <div class="gallery">
-      <img src="portrait1.jpg" alt="Фото 1">
-      <img src="portrait2.jpg" alt="Фото 2">
-      <img src="portrait3.avif" alt="Фото 3">
+      <div class="main-image">
+        <img src="portrait1.jpg" alt="Main Photo" id="mainImage">
+      </div>
+      <div class="thumbnails">
+        <img src="portrait1.jpg" alt="Фото 1" class="thumbnail" data-src="portrait1.jpg">
+        <img src="portrait2.jpg" alt="Фото 2" class="thumbnail" data-src="portrait2.jpg">
+        <img src="portrait3.avif" alt="Фото 3" class="thumbnail" data-src="portrait3.avif">
+      </div>
     </div>
     <div class="detail-description">
       <p>Портретная фотосессия — это возможность выразить индивидуальность клиента. Наши фотографы помогут раскрыть ваш образ и сделать кадры, которые запомнятся надолго.</p>
@@ -62,13 +67,21 @@
     </div>
     <div class="reviews">
       <h4>Отзывы:</h4>
-      <div class="review">
-        <p><strong>Анжелла:</strong> Очень понравилось! Атмосфера и результат — на высоте.</p>
+      <div class="review-form">
+        <input type="text" id="reviewName" placeholder="Ваше имя" required>
+        <textarea id="reviewText" placeholder="Ваш отзыв" required></textarea>
+        <button id="submitReview">Отправить отзыв</button>
       </div>
-      <div class="review">
-        <p><strong>Дмитрий:</strong> Фотограф учёл все пожелания. Качественные снимки.</p>
+      <div id="reviewList">
+        <div class="review">
+          <p><strong>Анжелла:</strong> Очень понравилось! Атмосфера и результат — на высоте.</p>
+        </div>
+        <div class="review">
+          <p><strong>Дмитрий:</strong> Фотограф учёл все пожелания. Качественные снимки.</p>
+        </div>
       </div>
     </div>
   </main>
+  <script src="detail.js"></script>
 </body>
 </html>
